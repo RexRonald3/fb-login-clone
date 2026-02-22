@@ -232,3 +232,45 @@ a{
     text-decoration: none;
     font-size: 14px
 }
+/* --- Mobile Responsiveness (500px to 350px) --- */
+@media (max-width: 500px) {
+    /* Shrink the main title slightly */
+    .tittle {
+        font-size: 40px; 
+    }
+
+    /* Allow cards to shrink dynamically */
+    .Card, .LoginCard {
+        width: 100%; /* Takes full width of the parent container */
+        max-width: 430px; /* Ensures it doesn't get wider than your original design */
+        padding: 15px 10px; /* Reduce horizontal padding slightly to save space */
+    }
+
+    /* Stack First Name and Surname vertically */
+    .Name_mainDiv {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* Reduce the gap between Date of Birth dropdowns so they don't overflow */
+    .DOB_inputDiv {
+        gap: 5px;
+    }
+    
+    .DOB_inputDiv select {
+        padding: 0px 2px; /* Smaller inner padding for narrow dropdowns */
+    }
+
+    /* Stack the gender radio buttons vertically for easier tapping */
+    .GenderInputDiv {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    /* Adjust the Sign Up button padding to prevent overflow */
+    .SignUp_Button {
+        padding: 8px 40px;
+        font-size: 18px;
+        width: 100%; /* Make it full width for a better mobile tap target */
+    }
+}
