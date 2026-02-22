@@ -1,0 +1,234 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(247, 251, 253);
+    font-family: Helvetica, Arial, sans-serif;
+}
+.background{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.tittle{
+    font-weight: bolder;
+    font-size: 55px;
+    color:rgb(0, 102, 255) ;
+    text-align: center;
+}
+.Card{
+    display: inline-block;
+    margin-top: 20px;
+    width: 430px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgb(197, 197, 197);
+    padding: 15px 0px 15px 0px;
+}
+h2,.sub_tittle{
+    text-align: center;
+}
+.sub_tittle{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: dimgrey;
+}
+form{
+    padding: 15px;
+    width: 100%;
+}
+.Name_mainDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+.FirstName_div,.SurName_div,.NumberOrEmail_div,.Password_div{
+    width: 100%;
+    height: 35px;
+    border: 1px solid rgb(198, 197, 197);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+.FirstName_div input,.SurName_div input,.NumberOrEmail_div input,.Password_div input{
+    height: 100%;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.DOB_mainDiv{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.DOB_textDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.DOB_inputDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+.DOB_inputDiv select{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    padding: 0px 5px 0px 5px;
+    border: 1px solid rgb(198, 197, 197);
+}
+.GenderMain_div{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.GenderTextDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.GenderInputDiv{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.GenderInputDiv label{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid rgb(198, 197, 197);
+    border-radius: 5px;
+    font-size: 14px;
+}
+.NumberOrEmail_div,.Password_div{
+    height: 35px;
+    margin-top: 12px;
+}
+.bottom_text{
+    margin-top:20px ;
+    font-size: 12px;
+    color: grey;
+}
+.bottom_div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.SignUp_Button{
+    background-color: rgb(15, 176, 0);
+    color: white;
+    font-size: 20px;
+    padding: 8px 60px;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.SignUp_Button:hover{
+    background-color: rgb(13, 134, 3);
+}
+a{
+    color: rgb(4, 4, 96);
+    text-decoration: none;
+    cursor: pointer;
+}
+.LoginPageRedirect{
+    margin-top: 15px;
+    color: rgb(0, 102, 255);
+    text-decoration: none;
+}
+.GenderTextDiv span,.DOB_textDiv span{
+    font-size: 12px;
+    color: rgb(71, 71, 71);
+}
+.fa-circle-question{
+    color: rgb(138, 138, 138);
+}
+#SurName_error,#FirstName_error,#DOB_error,#gender_error,#NumberOrEmail_error,#Password_error{
+    color: rgb(201, 28, 28);
+    display: none;
+}
+/* ################################### LOGIN PAGE ######################## */
+.LoginCard{     
+    display: none;
+    margin-top: 20px;
+    width: 430px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgb(197, 197, 197);
+    padding: 25px 15px 30px 15px;
+}
+.LoginFrom{
+    margin-top: 10px;
+}
+.Login_number_email_div,
+.Login_password_div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgb(198, 197, 197);
+    margin-top: 10px;
+    padding: 0px 10px;
+    height: 50px;
+    border-radius: 5px;
+}
+.Login_number_email_div input,.Login_password_div input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+
+}
+#Login_NumberOrEmail_error,#LoginPassword_error{
+    color: rgb(201, 28, 28);
+    display: none;
+}
+.LoginButton{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    background-color:rgb(0, 102, 255) ;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+.LoginButton:hover{
+    background-color:rgb(0, 84, 209);
+}
+.forgot_password_link_text{
+    text-align: center;
+}
+.forgot_password_link{
+    color:rgb(0, 102, 255) ;
+    text-decoration: none;
+    font-size: 14px
+}
